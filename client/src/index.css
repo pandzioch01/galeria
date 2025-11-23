@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Tailwind v4 theme tokens */
+@theme {
+  --color-primary: #777c6d;
+  --color-secondary: #b7b89f;
+  --color-text: #eeeeee;
+  --color-secondText: #d9d9d9;
+}
+
+/* Custom moving gradient animation */
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Utility class used in JSX */
+.animate-gradient-move {
+  background-size: 200% 200%;
+  animation: gradient-move 4s ease infinite;
+}
